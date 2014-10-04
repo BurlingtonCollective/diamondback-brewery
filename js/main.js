@@ -19,7 +19,7 @@ $(function(){
 			});
 		});
 		$window.scroll(function(){
-			if(!$body.is('transitional')){
+			if(!$body.is('.transitional')){
 				$body.addClass('transitional');
 			}
 			if($window.scrollTop() > ($hero.height() / 2)){
@@ -28,6 +28,13 @@ $(function(){
 				$body.removeClass('show-nav');
 			}
 		});
+
+		if($hero.is('.example')){
+			$hero.backstretch([
+				"images/will2.jpg",
+				"images/carly2.jpg"
+			], {fade: 500});
+		}
 
 	}
 
