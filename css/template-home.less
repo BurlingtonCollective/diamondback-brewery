@@ -48,18 +48,52 @@ section#home-about-us{
 }
 
 #location-heading{
-		// margin-top: 0;
+	// margin-top: 0;
+}
+.address{
+	list-style-type: none;
+	font-size: 1.1em;
+	margin: 0 0 20px;
+	padding: 0;
+}
+.contact-links{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0;
+	font-size: .8em;
+	word-break: break-all;
+}
+
+body.on-home{
+	header nav.navbar{
+		top: -@nav-height;
 	}
-	.address{
-		list-style-type: none;
-		font-size: 1.1em;
-		margin: 0 0 20px;
-		padding: 0;
+	footer nav.navbar{
+		bottom: -@footer-nav-height;
 	}
-	.contact-links{
-		display: block;
-		text-decoration: none;
-		padding: 5px 0;
-		font-size: .8em;
-		word-break: break-all;
+	&.transitional{
+		header nav.navbar{
+			.transition(top .3s ease-in-out);
+		}
+		footer nav.navbar{
+			.transition(bottom .3s ease-in-out);
+		}
+		#home-hero nav{
+			.transition(~'visibility .5s ease-in-out, opacity .5s ease-in-out');
+			visibility: visible;
+			.opacity(1);
+		}
 	}
+	&.show-nav{
+		header nav.navbar{
+			top: 0;
+		}
+		footer nav.navbar{
+			bottom: 0;
+		}
+		#home-hero nav{
+			visibility: hidden;
+			.opacity(0);
+		}
+	}
+}

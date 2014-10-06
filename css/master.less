@@ -54,38 +54,4 @@ header{
 	}
 }
 
-body.on-home{
-	header nav.navbar{
-		top: -@nav-height;
-	}
-	footer nav.navbar{
-		bottom: -@footer-nav-height;
-	}
-	&.transitional{
-		header nav.navbar{
-			.transition(top .3s ease-in-out);
-		}
-		footer nav.navbar{
-			.transition(bottom .3s ease-in-out);
-		}
-		#home-hero nav{
-			.transition(~'visibility .5s ease-in-out, opacity .5s ease-in-out');
-			visibility: visible;
-			.opacity(1);
-		}
-	}
-	&.show-nav{
-		header nav.navbar{
-			top: 0;
-		}
-		footer nav.navbar{
-			bottom: 0;
-		}
-		#home-hero nav{
-			visibility: hidden;
-			.opacity(0);
-		}
-	}
-}
-
 @import 'template-home';
