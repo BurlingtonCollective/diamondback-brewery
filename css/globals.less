@@ -39,7 +39,7 @@ html{
 	body{
 		padding-top: @nav-height;
 		min-height: 100%;
-		padding-bottom: @footer-nav-height + 60px;
+		// padding-bottom: @footer-nav-height + 60px;
 		nav.navbar{
 			background-image: url(http://www.transparenttextures.com/patterns/dark-denim-3.png);
 		}
@@ -82,6 +82,24 @@ header{
 				padding-left: 100px;
 			}
 		}
+	}
+}
+
+footer{
+	background: transparent url(../images/footer-cropped.png) center bottom no-repeat;
+	padding-top: 267px;
+	background-size: contain;
+}
+
+.media-object{
+	height: 64px;
+	width: 64px;
+	text-align: center;
+	border: 1px solid @text-color;
+	i.glyphicon{
+		line-height: 64px;
+		font-size: 2em;
+		color: @text-color;
 	}
 }
 
