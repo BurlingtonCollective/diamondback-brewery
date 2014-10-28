@@ -1,0 +1,88 @@
+@backup-bg: #eaeae8;
+@body-bg: @beer-foam;
+@text-color: @black;
+@link-color: @melon;
+@navbar-default-bg: @green;
+@navbar-default-link-color: @yellow-highlight;
+// @component-active-color: @beer-foam;
+
+@input-bg: lighten(@body-bg, 2%);
+@input-border-focus: fade(@melon, 60%);
+@input-color-placeholder: @melon;
+@input-border: @text-color;
+
+@btn-default-bg: lighten(@body-bg, 2%);
+@btn-default-border: @text-color;
+
+@btn-primary-color: @body-bg;
+@btn-primary-bg: @melon;
+
+@border-radius-base: 0px;
+@border-radius-large: 0px;
+@border-radius-small: 0px;
+
+.modal-content{
+	background: @body-bg;
+}
+
+html{
+	height: 100%;
+	position: relative;
+	body{
+		padding-top: @nav-height;
+		min-height: 100%;
+		padding-bottom: @footer-nav-height + 60px;
+		nav.navbar{
+			background-image: url(http://www.transparenttextures.com/patterns/dark-denim-3.png);
+		}
+	}
+}
+
+header{
+	nav.navbar{
+		& > .container a.navbar-brand{
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			margin-left: -75px;
+			max-width: 150px;
+			height: auto;
+			float: none;
+			padding: 0;
+			outline: none;
+		}
+	}
+	#top-nav{
+		@media(min-width: @grid-float-breakpoint){
+			.navbar-nav{
+				width: 50%;
+				.box-sizing(border-box);
+				margin: 0;
+				& > li{
+					width: 50%;
+					a{
+						text-align: center;
+						padding: 30px 15px;
+						outline: none;
+					}
+				}
+			}
+			.navbar-left{
+				padding-right: 100px;
+			}
+			.navbar-right{
+				padding-left: 100px;
+			}
+		}
+	}
+}
+
+.modal-backdrop{
+	// #gradient > .radial(@green, darken(@green, 80%));
+	#gradient > .radial(@beer-foam, darken(@beer-foam, 80%));
+	#gradient > .radial(@body-bg, darken(@body-bg, 80%));
+	// background: @green url(http://www.transparenttextures.com/patterns/dark-denim-3.png);
+	&.in{
+		.opacity(.5);
+	}
+}

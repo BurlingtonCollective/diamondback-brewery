@@ -2,56 +2,31 @@
 @icon-font-path: '../bower_components/bootstrap/fonts/';
 @import 'social';
 
+@font-family-serif: 'Arvo', serif;
+@font-family-base: @font-family-serif;
+
 
 @nav-height: 134px;
 @footer-nav-height: 51px;
 
+//colors
+@yellow-highlight: #dbda6f;
+@orange-highlight: #d5a270;
+@green-highlight: #5f885f;
 
-html{
-	height: 100%;
-	position: relative;
-	body{
-		padding-top: @nav-height;
-		min-height: 100%;
-		padding-bottom: @footer-nav-height + 60px;
-	}
-}
+@yellow: #cfcf27;
+@orange: #c7843d;
+@green: #136a35;
 
-header{
-	nav.navbar{
-		& > .container a.navbar-brand{
-			position: absolute;
-			top: 0px;
-			left: 50%;
-			margin-left: -75px;
-			max-width: 150px;
-			height: auto;
-			float: none;
-			padding: 0;
-		}
-	}
-	#top-nav{
-		@media(min-width: @grid-float-breakpoint){
-			.navbar-nav{
-				width: 50%;
-				.box-sizing(border-box);
-				margin: 0;
-				& > li{
-					width: 50%;
-					a{
-						text-align: center;
-						padding: 30px 15px;
-					}
-				}
-			}
-			.navbar-left{
-				padding-right: 100px;
-			}
-			.navbar-right{
-				padding-left: 100px;
-			}
-		}
-	}
-}
+@beer-foam: #f0ebe5;
 
+@melon: #d96739;
+
+@black: #1c1c1c;
+@bark: #5c463d;
+
+//app critical
+@import 'globals';
+
+//templates
 @import 'template-home';

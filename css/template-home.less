@@ -1,69 +1,3 @@
-section#home-hero{
-	position: relative;
-	background: #ccc;
-	margin-top: (0 - @nav-height);
-	#hero-logo{
-		position: absolute;
-		left: 50%;
-		top: 45%;
-		margin-top: -141.5px;
-		margin-left: -160px;
-	}
-	nav.navbar{
-		margin: 0;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		text-align: center;
-		border-radius: 0;
-		ul.navbar-nav{
-			font-size: 1.2em;
-			width: 100%;
-			& > li{
-				width: 25%;
-			}
-		}
-	}
-}
-
-section#home-about-us{
-	padding: 40px 0 60px;
-	#location-heading{
-		// margin-top: 0;
-	}
-	.address{
-		list-style-type: none;
-		font-size: 1.1em;
-		margin: 0 0 20px;
-		padding: 0;
-	}
-	.contact-links{
-		display: block;
-		text-decoration: none;
-		padding: 5px 0;
-		font-size: .8em;
-		word-break: break-all;
-	}
-}
-
-#location-heading{
-	// margin-top: 0;
-}
-.address{
-	list-style-type: none;
-	font-size: 1.1em;
-	margin: 0 0 20px;
-	padding: 0;
-}
-.contact-links{
-	display: block;
-	text-decoration: none;
-	padding: 5px 0;
-	font-size: .8em;
-	word-break: break-all;
-}
-
 body.on-home{
 	header nav.navbar{
 		top: -@nav-height;
@@ -96,4 +30,75 @@ body.on-home{
 			.opacity(0);
 		}
 	}
+}
+
+section#home-hero{
+	position: relative;
+	background: #ccc;
+	margin-top: (0 - @nav-height);
+	#hero-logo{
+		position: absolute;
+		left: 50%;
+		top: 45%;
+		margin-top: -141.5px;
+		margin-left: -160px;
+	}
+	nav.navbar{
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		border-radius: 0;
+		height: auto;
+		ul.navbar-nav{
+			font-size: 1.4em;
+			width: 100%;
+			& > li{
+				width: 25%;
+				a{
+					// text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+section#home-about-us{
+	padding: 40px 0 60px;
+	#location-heading{
+		// margin-top: 0;
+	}
+	.address{
+		list-style-type: none;
+		font-size: 1.1em;
+		margin: 0 0 20px;
+		padding: 0;
+	}
+	.contact-links{
+		display: block;
+		text-decoration: none;
+		padding: 5px 0;
+		font-size: .8em;
+		word-break: break-all;
+	}
+}
+
+#location-heading{
+	// margin-top: 0;
+}
+
+.address{
+	list-style-type: none;
+	font-size: 1.1em;
+	margin: 0 0 20px;
+	padding: 0;
+}
+.contact-links{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0;
+	font-size: .8em;
+	word-break: break-all;
 }
