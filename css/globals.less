@@ -8,7 +8,7 @@
 
 @input-bg: lighten(@body-bg, 2%);
 @input-border-focus: fade(@melon, 60%);
-@input-color-placeholder: @melon;
+@input-color-placeholder: fade(@melon, 60%);
 @input-border: @text-color;
 
 @btn-default-bg: lighten(@body-bg, 2%);
@@ -20,6 +20,14 @@
 @border-radius-base: 0px;
 @border-radius-large: 0px;
 @border-radius-small: 0px;
+
+@panel-bg: transparent;
+@panel-footer-bg: transparent;
+@panel-default-heading-bg: transparent;
+@panel-inner-border: fade(@text-color, 5%);
+@panel-default-border: fade(@text-color, 5%);
+
+@page-header-border-color: fade(@text-color, 5%);
 
 .modal-content{
 	background: @body-bg;
